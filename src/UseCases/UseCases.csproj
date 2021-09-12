@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AOP\AOP.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Aggregates\Account\Contact\" />
+    <Folder Include="Aggregates\Account\Carrier\" />
+    <Folder Include="Aggregates\Card\" />
+    <Folder Include="Commands\" />
+    <Folder Include="BusinessRules\" />
+    <Folder Include="Inputs\Account\" />
+    <Folder Include="Outputs\Account\" />
+    <Folder Include="Queries\" />
+    <Folder Include="UseCases\Account\" />
+  </ItemGroup>
+
+</Project>
