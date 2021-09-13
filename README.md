@@ -12,7 +12,7 @@ Nesta abordagem de AOP, desenvolvemos uma classe que representa o Interactor des
 
 ![alt text](https://res.cloudinary.com/practicaldev/image/fetch/s--G_FNRMwu--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/00zocjrfniog06hsbwnr.jpeg)
 
-Esta abordagem é muito interessante, pois com ela nós conseguimos adiar ao máximo possível decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto, pois conforme o livro aborda, estes itens devem ser tratados como secundários dentro do desenvolvimento de um sistema.
+Esta abordagem é muito interessante, pois com ela nós somos capazes de adiar ao máximo decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto, pois conforme o livro aborda, estes itens devem ser tratados como secundários dentro do desenvolvimento de um sistema.
 
 E com a utilização de técnicas de AOP, nós fomos capazes de criar um mecanismo de inversão de controle, que disponibiliza Aspectos (Plugins) de Log, Cache, Mappers entre outros, que podem facilmente ser implementados posteriormente na aplicação.
 
@@ -22,7 +22,7 @@ Assim sendo, podemos focar no que realmente é importante no início de todo pro
 
 Isto é muito aderente a realidade do nosso mercado, ainda mais quando amadurecemos como desenvolvedores/arquitetos de software, pois no final das contas, nosso foco deve ser o desenvolvimento de software que Entrega Valor para os nossos Clientes/Stakeholders e não para nós mesmos, não é verdade?
 
-Com certeza desta forma é muito mais fácil entregarmos valor, pois podemos trabalhar mais focados em entregas evolutivas das nossas POCs/MVPs, deixando decisões mais técnicas para o futuro, de acordo com a viabilidade do produto.
+Desta forma é muito mais fácil entregarmos valor, pois podemos trabalhar mais focados nas entregas evolutivas dos nossos MVPs, deixando decisões mais técnicas para o futuro, quando a viabilidade do produto estiver mais clara.
 
 ![alt text](https://blog.jovensprotagonistas.com/wp-content/uploads/2021/04/mvp-minimo-produto-viavel.jpg)
 
