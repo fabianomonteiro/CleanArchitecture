@@ -30,6 +30,10 @@ No livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de
 
 Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e precisamos reavaliar outras opções que se enquadrem melhor com o sistema já mais maduro.
 
+![alt text](https://www.davrous.com/wp-content/uploads/2018/12/screen001_thumb.jpg)
+
+Esta forma de pensar e desenvolver software pode nos poupar um grande esforço inicial tentando ser precisos em meio a tantas opções tecnológicas e de frameworks existentes.
+
 A abordagem de AOP gera duas coisas muito boas, a primeira é essa que já explicamos, de podermos adiar a decisão até o momento que tenhamos mais segurança para decidi-la, e a outra é que no final das contas, a nossa aplicação fica totalmente desacoplada e plugável, pois muitas vezes quando decidimos por utilizar um determinado framework logo no início, acabamos amarrando a aplicação a ele, e quando precisamos mudar de ideia acabamos tendo que refatorar muita coisa.
 
 Eu achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios, ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos utilizar os vários padrões arquiteturais, design patterns, e mescla-los em nossas soluções de acordo com a necessidade de cada projeto.
