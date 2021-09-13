@@ -48,6 +48,6 @@ Quero mostrar que existem conceitos e princípios que independem da forma como c
 
 Já vi muito código construído sem nenhuma boa prática, arquitetura, e sem nenhum princípio, eles funcionam, sim, eu já vi sistemas assim que já mantem empresas por 20 anos para mais, mas seja no custo de manutenção, ou no custo que você tem para evolui-lo, esse preço está sendo pago por alguém, tenha certeza disso.
 
-E não são só os donos de empresas que pagam esse custo, nós também pagamos, pois muitas vezes somos quase que obrigados a trabalhar de forma incansável, algumas vezes sem recebermos um real a mais, para resolver bugs extremamente difíceis de encontrar, e para criar features em softwares completamente acoplados e quase impossíveis de serem mantidos.
+E não são só os donos de empresas que pagam este custo, nós também o pagamos, pois muitas vezes somos quase que obrigados a trabalhar de forma incansável além do expediente, algumas vezes sem recebermos um real a mais, para resolver bugs extremamente difíceis de encontrar, e para criar features em softwares completamente acoplados e quase impossíveis de serem mantidos.
 
 Construir softwares verdadeiramente duráveis é para poucos, faça parte deste seleto grupo!
