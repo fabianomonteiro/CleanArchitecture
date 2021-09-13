@@ -3,7 +3,7 @@
 Neste repositório estou utilizando C# para construir uma arquitetura de projeto que utilize alguns dos conceitos e princípios que Robert Cecil Martin aborda em seu livro intitulado Clean Architecture, ou Arquitetura Limpa em português:
 
 <div style="text-align:center"><img src="https://m.media-amazon.com/images/I/411csr6Nn0L.jpg" /></div>
-
+<br />
 <p>
 Nesta fase inicial do projeto, estou aplicando desde conceitos mais conhecidos como Inversão de Controle utilizando Injeção de Dependência. Como também fazendo a Inversão de Controle utilizando o conceito de AOP (Aspect Oriented Programming) ou (Programação Orientada a Aspectos).
 </p>
