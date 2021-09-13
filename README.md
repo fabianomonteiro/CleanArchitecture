@@ -30,9 +30,9 @@ No livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de
 
 Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e tivemos que reavaliar outras opções que se enquadrassem melhor depois do sistema já mais maduro.
 
-![alt text](https://www.davrous.com/wp-content/uploads/2018/12/screen001_thumb.jpg)
+Esta forma de pensar e desenvolver software pode nos poupar um grande esforço inicial tentando ser precisos em meio a tantas opções tecnológicas e frameworks:
 
-Esta forma de pensar e desenvolver software pode nos poupar um grande esforço inicial tentando ser precisos em meio a tantas opções tecnológicas e de frameworks existentes.
+![alt text](https://www.davrous.com/wp-content/uploads/2018/12/screen001_thumb.jpg)
 
 A abordagem de AOP gera duas coisas muito boas, a primeira é essa que já explicamos, de podermos adiar a decisão até o momento que tenhamos mais segurança para decidi-la, e a outra é que no final das contas, a nossa aplicação fica totalmente desacoplada e plugável, pois muitas vezes quando decidimos por utilizar um determinado framework logo no início, acabamos amarrando a aplicação a ele, e quando precisamos mudar de ideia acabamos tendo que refatorar muita coisa.
 
