@@ -28,7 +28,7 @@ Com certeza desta forma é muito mais fácil entregarmos valor, pois podemos tra
 
 No livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de plugins criando uma aplicação inteira sem banco de dados, persistindo os dados diretamente em disco, no final do projeto ele viu que a abordagem de não utilizar um banco de dados era até melhor, e decidiu lançar o produto sem uma ferramenta de banco de dados.
 
-Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e precisamos reavaliar outras opções que se enquadrem melhor com o sistema já mais maduro.
+Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e tivemos que reavaliar outras opções que se enquadrassem melhor depois do sistema já mais maduro.
 
 ![alt text](https://www.davrous.com/wp-content/uploads/2018/12/screen001_thumb.jpg)
 
