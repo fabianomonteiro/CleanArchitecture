@@ -34,7 +34,7 @@ Esta forma de pensar e desenvolver software pode nos poupar um grande esforço i
 
 ![alt text](https://www.davrous.com/wp-content/uploads/2018/12/screen001_thumb.jpg)
 
-A abordagem de AOP gera duas coisas muito boas, a primeira é esta que já explicamos, de podermos adiar a decisão até o momento que tenhamos mais segurança para decidi-la, e a outra é que no final das contas, a nossa aplicação fica totalmente desacoplada e plugável, pois muitas vezes quando decidimos por utilizar um determinado framework logo no início, acabamos amarrando a aplicação a ele, e quando precisamos mudar de ideia acabamos tendo que refatorar muita coisa.
+A abordagem de AOP gera duas coisas muito boas, a primeira é esta que já explicamos, de podermos adiar a decisão até o momento que tenhamos mais segurança para decidi-la, e a outra é que no final das contas, a nossa aplicação ficará totalmente desacoplada e plugável, pois muitas vezes quando decidimos por utilizar um determinado framework logo no início, acabamos amarrando a aplicação a ele, e quando precisamos mudar de ideia acabamos tendo que refatorar muita coisa.
 
 Eu achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios, ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos utilizar os vários padrões arquiteturais, design patterns, e mescla-los em nossas soluções de acordo com a necessidade de cada projeto.
 
