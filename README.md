@@ -28,7 +28,9 @@ Desta forma é muito mais fácil entregarmos valor, pois podemos trabalhar mais 
 
 Além disso, no livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de plugins, criando uma aplicação inteira sem SGBD, persistindo as informações diretamente em disco focando na regra de negócio e em ter mais velocidade de desenvolvimento, no final do projeto ele viu que a abordagem de não utilizar um SGBD seria melhor para o contexto do seu projeto, e decidiu lança-lo desta forma.
 
-Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e tivemos que reavaliar outras opções que se enquadrassem melhor depois do sistema já mais maduro?
+Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e perdemos o timing do produto.
+
+Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que acabamos caindo na armadilha de definir estas coisas no início do projeto, e depois conforme o tempo passou e tivemos mais clareza, enchergamos a necessidade de reavaliar outras opções que se enquadrassem melhor com a ideia mais amadurecida?
 
 Esta forma de pensar e desenvolver software pode nos poupar um grande esforço inicial tentando ser precisos na escolha, em meio as tantas opções que temos disponíveis:
 
@@ -40,7 +42,7 @@ Muitas vezes quando decidimos utilizar um determinado framework logo no início 
 
 Eu também achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios e sobre mesclarmos os diversos paradigmas, arquiteuras e padrões de projeto, criando soluções customizadas a cada contexto de projeto.
 
-Ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois temos liberdade criativa.
+Ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos exercer a nossa liberdade criativa.
 
 Desta forma, pretendo explorar outros conceitos como CQRS, Agregadores do DDD entre outras abordagens.
 
