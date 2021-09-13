@@ -12,11 +12,11 @@ Nesta abordagem de AOP, desenvolvemos uma classe que representa o Interactor des
 
 ![alt text](https://res.cloudinary.com/practicaldev/image/fetch/s--G_FNRMwu--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/00zocjrfniog06hsbwnr.jpeg)
 
-Esta abordagem é muito interessante, pois com ela nós somos capazes de adiar ao máximo decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto, pois conforme o livro aborda, estes itens devem ser tratados como secundários dentro do desenvolvimento de um sistema.
+Esta abordagem é muito interessante, pois com ela nós somos capazes de adiar ao máximo decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto.
 
-E com a utilização de técnicas de AOP, nós fomos capazes de criar um mecanismo de inversão de controle, que disponibiliza Aspectos (Plugins) de Log, Cache, Mappers entre outros, que podem facilmente ser implementados posteriormente na aplicação.
+E com a utilização de técnicas de AOP, nós fomos capazes de criar um mecanismo de inversão de controle, que disponibiliza Aspectos (Plugins) de Log, Cache, Mappers entre outros, que podem facilmente ser implementados posteriormente no sistema.
 
-Assim sendo, podemos focar no que realmente é importante no início de todo projeto, principalmente para os nossos Clientes/Stakeholders, que é nada mais nada menos, que a nossa querida Regra de Negócio!
+Assim sendo, podemos focar no que realmente é importante no início do projeto, principalmente para os nossos Clientes/Stakeholders, que é nada mais nada menos, que a nossa querida Regra de Negócio!
 
 ![alt text](https://lh3.googleusercontent.com/proxy/4A7Ov_CuEfy4dMdc03h4dM--nTlXnUhLHBMYhdfR4myqL8VGVQ3bORVj8a6mEaCWiP3c6I8hXK6D2nCfok3ezUAJkIowe6_jP74KVPR-apdRVp949N5g9CI)
 
@@ -28,7 +28,7 @@ Desta forma é muito mais fácil entregarmos valor, pois podemos trabalhar mais 
 
 Além disso, no livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de plugins, criando uma aplicação inteira sem banco de dados, persistindo as informações diretamente em disco, e no final do projeto ele viu que a abordagem de não utilizar um SGBD seria até melhor para o contexto do seu projeto, e decidiu lançar o produto desta forma.
 
-Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e tivemos que reavaliar outras opções que se enquadrassem melhor depois do sistema já mais maduro.
+Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e tivemos que reavaliar outras opções que se enquadrassem melhor depois do sistema já mais maduro?
 
 Esta forma de pensar e desenvolver software pode nos poupar um grande esforço inicial tentando ser precisos na escolha, em meio as tantas opções que temos disponíveis:
 
@@ -36,18 +36,18 @@ Esta forma de pensar e desenvolver software pode nos poupar um grande esforço i
 
 Como vimos, a abordagem de AOP nos ajuda bastante a adiar algumas decisões até o momento que tenhamos mais segurança para toma-las, e também ajuda com que nossas aplicações fiquem desacopladas e plugáveis, pois muitas vezes quando decidimos por utilizar um determinado framework logo no início, acabamos amarrando a aplicação a ele, e quando precisamos mudar de ideia acabamos tendo que refatorar muita coisa.
 
-Eu achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios, ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos utilizar os vários padrões arquiteturais, design patterns, e mescla-los em nossas soluções de acordo com a necessidade de cada projeto.
+Eu também achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios, ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos utilizar os vários padrões arquiteturais, design patterns, e mescla-los em nossas soluções de acordo com a necessidade de cada projeto.
 
-Neste projeto pretendo explorar outros conceitos como CQRS, Agregadores do DDD entre outras abordagens.
+Desta forma, pretendo explorar outros conceitos como CQRS, Agregadores do DDD entre outras abordagens.
 
 O projeto ainda está em construção e pretendo ir amadurecendo-o aos poucos, conto com a colaboração de quem estiver a fim de me apoiar nesta empreitada!
 
-E lembre-se, não existe bala de prata no desenvolvimento de software, esta solução que pretendo desenvolver é uma mescla de vários conhecimentos que adquiri durante os meus quase 20 anos na área de desenvolvimento de software, e minha intenção aqui não é de convencer ninguém de que existe uma arquitetura perfeita que deve ser seguida para todos os projetos.
+E lembre-se, não existe bala de prata no desenvolvimento de software, esta solução que pretendo desenvolver é uma mescla de vários conhecimentos que adquiri durante os meus anos na área de desenvolvimento de software, e minha intenção aqui não é de convencer ninguém de que existe uma arquitetura perfeita que deve ser seguida para todos os projetos.
 
-Quero mostrar que existem conceitos e princípios que independem da forma como construimos nossos softwares, e até de quais linguagens e plataformas utilizamos, se você seguir estes bons conceitos e princípios, tenho certeza de que sua aplicação chegará muito mais longe do que uma aplicação que não os seguem.
+Quero mostrar que existem conceitos e princípios que independem da forma como construimos nossos softwares, e até de quais linguagens e plataformas utilizamos, se você seguir estes bons conceitos e princípios, tenho certeza de que seus sistemas chegarão muito mais longe do que sistemas que não os seguem.
 
-Já vi muito código construído sem nenhuma boa prática, arquitetura, e sem nenhum princípio, eles funcionam, sim, eu já vi sistemas assim que já mantem empresas por 20 anos para mais, mas seja no custo de manutenção, ou no custo que você tem para evolui-lo, esse preço está sendo pago por alguém, tenha certeza disso.
+Já vi muito código construído sem nenhuma boa prática, arquitetura, e sem nenhum princípio, eles funcionam, sim, eu já vi sistemas assim que já duram mais de 20 anos, mas seja no custo de manutenção, ou no custo que você tem para evolui-lo, esse preço está sendo pago por alguém, tenha certeza disso.
 
-E não são só os donos de empresas que pagam este custo, nós também o pagamos, pois muitas vezes somos quase que obrigados a trabalhar de forma incansável além do expediente, algumas vezes sem recebermos um real a mais, para resolver bugs extremamente difíceis de encontrar, e para criar features em softwares completamente acoplados e quase impossíveis de serem mantidos.
+E não são só os donos de empresas que pagam este custo, nós também o pagamos, pois muitas vezes somos quase que obrigados a trabalhar de forma incansável além do expediente, algumas vezes sem recebermos um real a mais por isso, para resolver bugs extremamente difíceis de encontrar, e para criar features em softwares completamente acoplados e quase impossíveis de serem mantidos.
 
 Construir softwares verdadeiramente duráveis é para poucos, faça parte deste seleto grupo!
