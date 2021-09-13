@@ -4,9 +4,8 @@ Neste repositório estou utilizando C# para construir uma arquitetura de projeto
 
 <div style="text-align:center"><img src="https://m.media-amazon.com/images/I/411csr6Nn0L.jpg" /></div>
 
-Estou aplicando desde conceitos mais conhecidos como Inversão de Controle utilizando Injeção de Dependência.
 
-Como também fazendo a Inversão de Controle utilizando o conceito de AOP (Aspect Oriented Programming) ou (Programação Orientada a Aspectos).
+Nesta fase inicial do projeto, estou aplicando desde conceitos mais conhecidos como Inversão de Controle utilizando Injeção de Dependência. Como também fazendo a Inversão de Controle utilizando o conceito de AOP (Aspect Oriented Programming) ou (Programação Orientada a Aspectos).
 
 Nesta abordagem de AOP, desenvolvemos uma classe que representa o Interactor descrito no livro, e ele é responsável por atuar como um Proxy Transparente que encapsula todas as execuções da aplicação:
 
