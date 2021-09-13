@@ -26,7 +26,7 @@ Desta forma é muito mais fácil entregarmos valor, pois podemos trabalhar mais 
 
 ![alt text](https://blog.jovensprotagonistas.com/wp-content/uploads/2021/04/mvp-minimo-produto-viavel.jpg)
 
-Além disso, no livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de plugins, criando uma aplicação inteira sem banco de dados, persistindo as informações diretamente em disco, e no final do projeto ele viu que a abordagem de não utilizar um SGBD seria até melhor para o contexto do seu projeto, e decidiu lançar o produto desta forma.
+Além disso, no livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de plugins, criando uma aplicação inteira sem SGBD, persistindo as informações diretamente em disco focando em ter mais velocidade de desenvolvimento, e no final do projeto ele viu que a abordagem de não utilizar um SGBD seria até melhor para o contexto do seu projeto, e decidiu lança-lo desta forma.
 
 Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e tivemos que reavaliar outras opções que se enquadrassem melhor depois do sistema já mais maduro?
 
@@ -34,9 +34,13 @@ Esta forma de pensar e desenvolver software pode nos poupar um grande esforço i
 
 ![alt text](https://www.davrous.com/wp-content/uploads/2018/12/screen001_thumb.jpg)
 
-Como vimos, a abordagem de AOP nos ajuda bastante a adiar algumas decisões até o momento que tenhamos mais segurança para toma-las, e também ajuda com que nossas aplicações fiquem desacopladas e plugáveis, pois muitas vezes quando decidimos por utilizar um determinado framework logo no início, acabamos amarrando a aplicação a ele, e quando precisamos mudar de ideia acabamos tendo que refatorar muita coisa.
+Como vimos, a abordagem de AOP nos ajuda bastante a adiar algumas decisões até o momento que tenhamos mais segurança para toma-las, e também nos ajuda no desacoplamento dos nossos sitemas, tornando-os mais plugáveis.
 
-Eu também achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios, ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos utilizar os vários padrões arquiteturais, design patterns, e mescla-los em nossas soluções de acordo com a necessidade de cada projeto.
+Muitas vezes quando decidimos utilizar um determinado framework logo no início do projeto, acabamos de forma involuntária acoplando o sistema a ele, e quando precisamos mudar de ideia acabamos tendo que refatorar muita coisa.
+
+Eu também achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios e sobre mesclarmos os diversos paradigmas, arquiteuras e padrões de projeto, criando soluções customizadas a cada contexto de projeto.
+
+Ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois temos liberdade criativa.
 
 Desta forma, pretendo explorar outros conceitos como CQRS, Agregadores do DDD entre outras abordagens.
 
