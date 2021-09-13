@@ -24,16 +24,18 @@ Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito temp
 
 A abordagem de AOP gera duas coisas muito boas, a primeira é essa que já explicamos, de podermos adiar a decisão até o momento que tenhamos mais segurança para decidi-la, e a outra é que no final das contas, a nossa aplicação fica totalmente desacoplada e plugável, pois muitas vezes quando decidimos por utilizar um determinado framework logo no início, acabamos amarrando a aplicação a ele, e quando precisamos mudar de ideia acabamos tendo que refatorar muita coisa.
 
-Eu achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e principios, ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos utilizar os vários padrões arquiteturais, design patterns, e mescla-los em nossas soluções de acordo com a necessidade de cada projeto.
+Eu achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios, ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos utilizar os vários padrões arquiteturais, design patterns, e mescla-los em nossas soluções de acordo com a necessidade de cada projeto.
 
 Neste projeto pretendo explorar conceitos de CQRS, Agregadores do DDD entre outras abordagens.
 
 O projeto ainda está em construção e pretendo ir amadurecendo ele aos poucos, conto com a colaboração de quem estiver afim de me apoiar nesta empreitada!
 
-Lembrem-se, não existe bala de prata no desenvolvimento de software, esta solução que estou criando é uma mescla de vários conhecimentos que adiquiri durante os meus quase 20 anos na área de desenvolvimento de software, e minha intenção aqui não é de convencer ninguém de que existe uma arquitetura perfeita que deve ser seguida para todos os projetos.
+Lembrem-se, não existe bala de prata no desenvolvimento de software, esta solução que estou criando é uma mescla de vários conhecimentos que adquiri durante os meus quase 20 anos na área de desenvolvimento de software, e minha intenção aqui não é de convencer ninguém de que existe uma arquitetura perfeita que deve ser seguida para todos os projetos.
 
-Quero mostrar que existem conceitos e principios, que independem da forma como você irá construir a sua aplicação, e até de qual linguagem e plataforma você irá desenvolve-la, se você seguir estes conceitos e principios, tenho certeza que sua aplicação chegará muito mais longe do que uma aplicação que não os seguem.
+Quero mostrar que existem conceitos e princípios, que independem da forma como você irá construir a sua aplicação, e até de qual linguagem e plataforma você irá desenvolvê-la, se você seguir estes conceitos e princípios, tenho certeza que sua aplicação chegará muito mais longe do que uma aplicação que não os seguem.
 
-Já vi muito código construido sem nenhuma boa práticas, arquitetura, e sem nenhum principio, eles funcionam, sim, eu já vi sistemas assim que já mantem empresas por 20 anos, mas seja no custo de manutenção, ou no custo que você tem para evolui-lo, esse preço está sendo pago por alguém, você pode ter certeza.
+Já vi muito código construído sem nenhuma boa prática, arquitetura, e sem nenhum princípio, eles funcionam, sim, eu já vi sistemas assim que já mantem empresas por 20 anos pra mais, mas seja no custo de manutenção, ou no custo que você tem para evolui-lo, esse preço está sendo pago por alguém, tenha certeza disso.
 
-Construir softwares realmente verdadeiramente duráveis é para poucos, seja um destes!
+E não são só os donos de empresas que pagam esse custo, nós também pagamos, pois muitas vezes somos quase que obrigados a trabalhar de forma incansável, algumas vezes sem ganhar um real a mais, para resolver bugs extremamente difíceis de encontrar, e para criar novas features em softwares completamente acoplados e quase impossíveis de serem mantidos.
+
+Construir softwares verdadeiramente duráveis é para poucos, seja um destes!
