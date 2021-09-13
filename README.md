@@ -8,13 +8,13 @@ Neste repositório estou utilizando C# para construir uma arquitetura de projeto
 Nesta fase inicial do projeto, estou aplicando desde conceitos mais conhecidos como Inversão de Controle utilizando Injeção de Dependência, como também fazendo a Inversão de Controle utilizando o conceito de AOP (Aspect Oriented Programming) ou (Programação Orientada a Aspectos).
 </p>
 
-Nesta abordagem de AOP, desenvolvi uma classe que representa o Interactor descrito no livro, e ele é responsável por atuar como um Proxy Transparente que encapsula todas as execuções da aplicação:
+Mesclando a abordagem de AOP com conceitos da Arquitetura Limpa, desenvolvi uma classe que representa o Interactor descrito no livro, e ela é responsável por atuar como um Proxy Transparente que encapsula todas as execuções da aplicação:
 
 ![alt text](https://res.cloudinary.com/practicaldev/image/fetch/s--G_FNRMwu--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/00zocjrfniog06hsbwnr.jpeg)
 
-Esta abordagem é muito interessante, pois com ela nós somos capazes de adiar ao máximo decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto.
+Esta abordagem ficou interessante, pois com ela pretendo ser capaz de adiar ao máximo decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto.
 
-E com a utilização de técnicas de AOP, criei um mecanismo de inversão de controle, que disponibiliza Aspectos (Plugins) de Log, Cache, Mappers entre outros, que podem facilmente ser implementados posteriormente no sistema.
+Extendendo a utilização das técnicas de AOP, criei um mecanismo de inversão de controle, que disponibiliza Aspectos (Plugins) de Log, Cache, Mappers entre outros, que podem facilmente ser implementados posteriormente no sistema.
 
 Assim sendo, podemos focar no que realmente é importante no início do projeto, principalmente para os nossos Clientes/Stakeholders, que é nada mais nada menos, que a nossa querida Regra de Negócio!
 
