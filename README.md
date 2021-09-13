@@ -38,16 +38,16 @@ A abordagem de AOP gera duas coisas muito boas, a primeira é esta que já expli
 
 Eu achei interessante o livro, pois Robert Martin fala muito mais sobre conceitos e princípios, ele não nos da uma receita de bolo de como podemos aplicar de forma prática a arquitetura limpa em nossos projetos, isto é interessante, pois podemos utilizar os vários padrões arquiteturais, design patterns, e mescla-los em nossas soluções de acordo com a necessidade de cada projeto.
 
-Neste projeto pretendo explorar conceitos de CQRS, Agregadores do DDD entre outras abordagens.
+Neste projeto pretendo explorar outros conceitos como CQRS, Agregadores do DDD entre outras abordagens.
 
 O projeto ainda está em construção e pretendo ir amadurecendo-o aos poucos, conto com a colaboração de quem estiver a fim de me apoiar nesta empreitada!
 
-Lembrem-se, não existe bala de prata no desenvolvimento de software, esta solução que estou criando é uma mescla de vários conhecimentos que adquiri durante os meus quase 20 anos na área de desenvolvimento de software, e minha intenção aqui não é de convencer ninguém de que existe uma arquitetura perfeita que deve ser seguida para todos os projetos.
+E lembre-se, não existe bala de prata no desenvolvimento de software, esta solução que pretendo desenvolver é uma mescla de vários conhecimentos que adquiri durante os meus quase 20 anos na área de desenvolvimento de software, e minha intenção aqui não é de convencer ninguém de que existe uma arquitetura perfeita que deve ser seguida para todos os projetos.
 
-Quero mostrar que existem conceitos e princípios, que independem da forma como você irá construir a sua aplicação, e até de qual linguagem e plataforma você irá desenvolvê-la, se você seguir estes conceitos e princípios, tenho certeza de que sua aplicação chegará muito mais longe do que uma aplicação que não os seguem.
+Quero mostrar que existem conceitos e princípios que independem da forma como construimos nossos softwares, e até de quais linguagens e plataformas utilizamos, se você seguir estes bons conceitos e princípios, tenho certeza de que sua aplicação chegará muito mais longe do que uma aplicação que não os seguem.
 
 Já vi muito código construído sem nenhuma boa prática, arquitetura, e sem nenhum princípio, eles funcionam, sim, eu já vi sistemas assim que já mantem empresas por 20 anos para mais, mas seja no custo de manutenção, ou no custo que você tem para evolui-lo, esse preço está sendo pago por alguém, tenha certeza disso.
 
-E não são só os donos de empresas que pagam esse custo, nós também pagamos, pois muitas vezes somos quase que obrigados a trabalhar de forma incansável, algumas vezes sem ganhar um real a mais, para resolver bugs extremamente difíceis de encontrar, e para criar features em softwares completamente acoplados e quase impossíveis de serem mantidos.
+E não são só os donos de empresas que pagam esse custo, nós também pagamos, pois muitas vezes somos quase que obrigados a trabalhar de forma incansável, algumas vezes sem recebermos um real a mais, para resolver bugs extremamente difíceis de encontrar, e para criar features em softwares completamente acoplados e quase impossíveis de serem mantidos.
 
-Construir softwares verdadeiramente duráveis é para poucos, seja um destes!
+Construir softwares verdadeiramente duráveis é para poucos, faça parte deste seleto grupo!
