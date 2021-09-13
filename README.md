@@ -6,7 +6,7 @@ Estou aplicando desde conceitos mais conhecidos como Inversão de Controle utili
 
 Como também fazendo a Inversão de Controle utilizando o conceito de AOP (Aspect Oriented Programming) ou (Programação Orientada a Aspectos).
 
-Nesta abordagem de AOP, desenvolvi uma classe que representa o Interactor descrito no livro, e ele é responsável por atuar como um Proxy Transparente que encapsula todas as execuções da aplicação.
+Nesta abordagem de AOP, desenvolvemos uma classe que representa o Interactor descrito no livro, e ele é responsável por atuar como um Proxy Transparente que encapsula todas as execuções da aplicação.
 
 Esta abordagem é muito interessante, pois com ela nós conseguimos adiar o máximo possível decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto, pois conforme o livro aborda estes itens devem ser tratados como secundários dentro do desenvolvimento de uma aplicação.
 
