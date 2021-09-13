@@ -1,6 +1,8 @@
 # CleanArchitecture
 
-Neste repositório estou utilizando C# para construir uma arquitetura de projeto que utilize alguns dos conceitos e princípios que Robert Cecil Martin aborda em seu livro intitulado Clean Architecture, ou Arquitetura Limpa em português.
+Neste repositório estou utilizando C# para construir uma arquitetura de projeto que utilize alguns dos conceitos e princípios que Robert Cecil Martin aborda em seu livro intitulado Clean Architecture, ou Arquitetura Limpa em português:
+
+![alt text](https://m.media-amazon.com/images/I/411csr6Nn0L.jpg)
 
 Estou aplicando desde conceitos mais conhecidos como Inversão de Controle utilizando Injeção de Dependência.
 
