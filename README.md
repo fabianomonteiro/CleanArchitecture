@@ -8,7 +8,7 @@ Como também fazendo a Inversão de Controle utilizando o conceito de AOP (Aspec
 
 Nesta abordagem de AOP, desenvolvemos uma classe que representa o Interactor descrito no livro, e ele é responsável por atuar como um Proxy Transparente que encapsula todas as execuções da aplicação.
 
-Esta abordagem é muito interessante, pois com ela nós conseguimos adiar o máximo possível decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto, pois conforme o livro aborda estes itens devem ser tratados como secundários dentro do desenvolvimento de uma aplicação.
+Esta abordagem é muito interessante, pois com ela nós conseguimos adiar o máximo possível decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto, pois conforme o livro aborda, estes itens devem ser tratados como secundários dentro do desenvolvimento de uma aplicação.
 
 Com a utilização de técnicas de AOP, nós somos capazes de criar um mecanismo de inversão de controle, que disponibiliza Aspectos (Plugins) de Log, Cache, Mappers e outros que podem facilmente ser implementados posteriormente no projeto.
 
