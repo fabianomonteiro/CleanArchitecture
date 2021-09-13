@@ -20,7 +20,7 @@ Assim sendo, podemos focar no que realmente é importante no início de todo pro
 
 ![alt text](https://lh3.googleusercontent.com/proxy/4A7Ov_CuEfy4dMdc03h4dM--nTlXnUhLHBMYhdfR4myqL8VGVQ3bORVj8a6mEaCWiP3c6I8hXK6D2nCfok3ezUAJkIowe6_jP74KVPR-apdRVp949N5g9CI)
 
-Isto é muito aderente a realidade do nosso mercado, ainda mais quando amadurecemos como desenvolvedores/arquitetos de software, pois no final das contas, nosso foco deve ser o desenvolvimento de software que Entrega Valor para os nossos Clientes/Stakeholders e não para nós mesmos, não é verdade?
+Isto é muito aderente a realidade do nosso mercado, ainda mais quando amadurecemos como desenvolvedores/arquitetos de software, pois no final das contas, nosso foco deve ser o desenvolvimento de softwares que Entreguem cada vez mais Valor para os nossos Clientes/Stakeholders e não para nós mesmos, não é verdade?
 
 Desta forma é muito mais fácil entregarmos valor, pois podemos trabalhar mais focados nas entregas evolutivas dos nossos MVPs, deixando decisões mais técnicas para o futuro, quando a viabilidade do produto estiver mais clara.
 
