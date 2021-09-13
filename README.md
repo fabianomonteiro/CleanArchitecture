@@ -50,7 +50,7 @@ O projeto ainda está em construção e pretendo ir amadurecendo-o aos poucos, c
 
 E lembre-se, não existe bala de prata no desenvolvimento de software, esta solução que pretendo desenvolver é uma mescla de vários conhecimentos que adquiri durante os meus anos na área de desenvolvimento de software, e minha intenção aqui não é de convencer ninguém de que existe uma arquitetura perfeita que deve ser seguida para todos os projetos.
 
-Quero mostrar que existem conceitos e princípios que independem da forma como construimos nossos softwares, e até de quais linguagens e plataformas utilizamos, se você seguir estes bons conceitos e princípios, tenho certeza de que seus sistemas chegarão muito mais longe do que sistemas que não os seguem.
+Quero mostrar que existem conceitos e princípios que independem da forma como construimos nossos softwares, e até de quais linguagens e plataformas utilizamos, e se você segui-los, tenho certeza de que seus sistemas chegarão muito mais longe do que sistemas que não o fazem.
 
 Já vi muito código construído sem nenhuma boa prática, arquitetura, e sem nenhum princípio, eles funcionam, sim, eu já vi sistemas assim que já duram mais de 20 anos, mas seja no custo de manutenção, ou no custo que você tem para evolui-lo, esse preço está sendo pago por alguém, tenha certeza disso.
 
