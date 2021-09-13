@@ -1,4 +1,6 @@
-﻿using Facade;
+﻿using AOP;
+using API.Aspects;
+using Facade;
 using Moq;
 using System.Threading.Tasks;
 using UseCases;
@@ -10,11 +12,15 @@ using Xunit;
 
 namespace UnitTest.Facade
 {
-    public class AccountFacadeUnitTest
+    public class AccountFacadeUnitTest : ICallerInstance
     {
         [Fact]
         public void Test_Insert_Account_Sync()
         {
+            AspectWeaver.Instance.AddAspect<LoggingAspect>();
+            AspectWeaver.Instance.AddAspect<CachingAspect>();
+            AspectWeaver.Instance.AddAspect<MappingAspect>();
+
             var listActiveAccountQueryMock = new Mock<IListActiveAccountQuery>();
             var getAccountByIdQueryMock = new Mock<IGetAccountByIdQuery>();
             var insertAccountCommandMock = new Mock<IInsertAccountCommand>();
@@ -31,7 +37,12 @@ namespace UnitTest.Facade
                 );
 
             var input = new InsertAccountUseCaseInput();
-            var output = accountFacade.Insert(input);
+            var output = 
+                accountFacade
+                    .Insert()
+                    .MapInput(input)
+                    .Execute(this)
+                    .GetOutputAsync<InsertAccountUseCaseInput>();
         }
 
         [Fact]
@@ -53,7 +64,12 @@ namespace UnitTest.Facade
                 );
 
             var input = new InsertAccountUseCaseInput();
-            var output = await accountFacade.InsertAsync(input);
+            var output = await 
+                accountFacade
+                    .Insert()
+                    .SetInput(input)
+                    .Execute(this)
+                    .GetOutputAsync();
         }
     }
 }

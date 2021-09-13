@@ -1,32 +1,44 @@
-﻿using Facade;
+﻿using API.Hateoas.Account.Get;
+using Facade;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using UseCases.Aggregations.Account.Queries;
-using UseCases.Outputs;
+using UseCases;
 
 namespace Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AccountController : ControllerBase
+    public class AccountController : ControllerBase, ICallerInstance
     {
         private readonly AccountFacade _accountFacade;
-        private readonly ILogger<AccountController> _logger;
 
-        public AccountController(ILogger<AccountController> logger)
+        public AccountController(AccountFacade accountFacade)
         {
-            _logger = logger;
+            _accountFacade = accountFacade;
         }
 
         [HttpGet]
-        public IEnumerable<ListActiveAccountQueryOutput> List()
+        [Route("ListActive")]
+        public async Task<IEnumerable<ListActiveAccountHateoas>> ListActive()
         {
-            //__accountFacade
-            throw new NotImplementedException();
+            return await 
+                _accountFacade
+                    .ListActive()
+                    .Execute(this)
+                    .GetOutputAsync<IEnumerable<ListActiveAccountHateoas>>();
+        }
+
+        [HttpGet]
+        [Route("GetById/{id}")]
+        public async Task<GetAccountByIdHateoas> GetById(int id)
+        {
+            return await 
+                _accountFacade
+                    .GetById()
+                    .SetInput(id)
+                    .Execute(this)
+                    .GetOutputAsync<GetAccountByIdHateoas>();
         }
     }
 }

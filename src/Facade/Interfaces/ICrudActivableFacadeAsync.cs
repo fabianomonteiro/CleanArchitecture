@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+using UseCases;
+using UseCases.Inputs;
 
 namespace Facade.Interfaces
 {
@@ -12,14 +13,14 @@ namespace Facade.Interfaces
         TListActiveOutput, 
         TGetByIdOutput> : IFacade
     {
-        Task<IEnumerable<TListActiveOutput>> ListActiveAsync();
+        IQuery<VoidInput, IEnumerable<TListActiveOutput>> ListActive();
 
-        Task<TGetByIdOutput> GetByIdAsync(int id);
+        IQuery<int, TGetByIdOutput> GetById();
 
-        Task<TInsertOutput> InsertAsync(TInsertInput input);
+        IUseCase<TInsertInput, TInsertOutput> Insert();
 
-        Task<TUpdateOutput> UpdateAsync(TUpdateInput input);
+        IUseCase<TUpdateInput , TUpdateOutput> Update();
 
-        Task<TDeleteByIdOutput> DeleteByIdAsync(int id);
+        IUseCase<int, TDeleteByIdOutput> DeleteById();
     }
 }

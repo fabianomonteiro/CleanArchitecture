@@ -4,7 +4,7 @@ using UseCases.Inputs;
 
 namespace UseCases.Queries
 {
-    public interface IListActiveAccountQuery : IInteractor<VoidInput, IEnumerable<ListActiveAccountQueryOutput>>
+    public interface IListActiveAccountQuery : IQuery<VoidInput, IEnumerable<ListActiveAccountQueryOutput>>
     {
     }
 }

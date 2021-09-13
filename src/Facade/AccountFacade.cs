@@ -1,6 +1,5 @@
 ﻿using Facade.Interfaces;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UseCases;
 using UseCases.Aggregations.Account.Queries;
 using UseCases.Aggregations.Account.UseCases.Delete;
@@ -38,57 +37,29 @@ namespace Facade
             _deleteAccountByIdUseCase = deleteAccountByIdUseCase;
         }
 
-        public async Task<IEnumerable<ListActiveAccountQueryOutput>> ListActiveAsync()
+        public IQuery<VoidInput, IEnumerable<ListActiveAccountQueryOutput>> ListActive()
         {
-            return await
-                _listActiveAccountQuery
-                    .Execute(this)
-                    .GetOutputAsync();
+            return _listActiveAccountQuery;
         }
 
-        public async Task<GetAccountByIdQueryOutput> GetByIdAsync(int id)
+        public IQuery<int, GetAccountByIdQueryOutput> GetById()
         {
-            return await 
-                _getAccountByIdQuery
-                    .SetInput(id)
-                    .Execute(this)
-                    .GetOutputAsync();
+            return _getAccountByIdQuery;
         }
 
-        public async Task<InsertAccountUseCaseOutput> InsertAsync(InsertAccountUseCaseInput accountInput)
+        public IUseCase<InsertAccountUseCaseInput, InsertAccountUseCaseOutput> Insert()
         {
-            return await 
-                _insertAccountUseCase
-                    .SetInput(accountInput)
-                    .Execute(this)
-                    .GetOutputAsync();
+            return _insertAccountUseCase;
         }
 
-        public InsertAccountUseCaseOutput Insert(InsertAccountUseCaseInput accountInput)
+        public IUseCase<UpdateAccountUseCaseInput, UpdateAccountUseCaseOutput> Update()
         {
-            return 
-                _insertAccountUseCase
-                    .SetInput(accountInput)
-                    .Execute(this)
-                    .GetOutput();
+            return _editAccountUseCase;
         }
 
-        public async Task<UpdateAccountUseCaseOutput> UpdateAsync(UpdateAccountUseCaseInput accountInput)
+        public IUseCase<int, DeleteAccountByIdUseCaseOutput> DeleteById()
         {
-            return await 
-                _editAccountUseCase
-                    .SetInput(accountInput)
-                    .Execute(this)
-                    .GetOutputAsync();
-        }
-
-        public async Task<DeleteAccountByIdUseCaseOutput> DeleteByIdAsync(int id)
-        {
-            return await
-                _deleteAccountByIdUseCase
-                    .SetInput(id)
-                    .Execute(this)
-                    .GetOutputAsync();
+            return _deleteAccountByIdUseCase;
         }
     }
 }

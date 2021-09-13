@@ -3,7 +3,9 @@ using System.Threading.Tasks;
 
 namespace UseCases
 {
-    public interface IInteractor<TInput, TOutput>
+    public interface IInteractor { }
+
+    public interface IInteractor<TInput, TOutput> : IInteractor
     {
         IInteractor<TInput, TOutput> Execute<TCallerInstance>(
             TCallerInstance callerInstance,
@@ -17,5 +19,9 @@ namespace UseCases
         Task<TOutput> GetOutputAsync();
 
         TOutput GetOutput();
+
+        IInteractor<TInput, TOutput> MapInput<TSource>(TSource source);
+
+        Task<TDestination> GetOutputAsync<TDestination>();
     }
 }

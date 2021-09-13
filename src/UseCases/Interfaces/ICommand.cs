@@ -12,5 +12,7 @@ namespace UseCases
             where TCallerInstance : class, IUseCase;
 
         new ICommand<TInput, TOutput> SetInput(TInput input);
+
+        new ICommand<TInput, TOutput> MapInput<TSource>(TSource source);
     }
 }

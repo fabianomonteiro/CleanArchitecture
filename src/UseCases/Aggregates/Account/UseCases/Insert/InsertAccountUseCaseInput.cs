@@ -8,14 +8,9 @@ namespace UseCases.Inputs
 {
     public class InsertAccountUseCaseInput
     {
-        internal Account ToAccount()
-        {
-            throw new NotImplementedException();
-        }
-
         internal InsertAccountCommandInput ToInsertAccountCommandInput()
         {
-            throw new NotImplementedException();
+            return new InsertAccountCommandInput();
         }
     }
 }
