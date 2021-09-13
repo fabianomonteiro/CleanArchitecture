@@ -10,11 +10,11 @@ Nesta abordagem de AOP, desenvolvemos uma classe que representa o Interactor des
 
 Esta abordagem é muito interessante, pois com ela nós conseguimos adiar ao máximo possível decisões de quais tecnologias, banco de dados, e frameworks vamos utilizar no projeto, pois conforme o livro aborda, estes itens devem ser tratados como secundários dentro do desenvolvimento de uma sistema.
 
-Com a utilização de técnicas de AOP, nós somos capazes de criar um mecanismo de inversão de controle, que disponibiliza Aspectos (Plugins) de Log, Cache, Mappers e outros que podem facilmente ser implementados posteriormente no projeto.
+E com a utilização de técnicas de AOP, nós fomos capazes de criar um mecanismo de inversão de controle, que disponibiliza Aspectos (Plugins) de Log, Cache, Mappers entre outros, que podem facilmente ser implementados posteriormente no sistema.
 
-Assim sendo, podemos focar no que realmente é importante no início de todo projeto, a Regra de Negócio!
+Assim sendo, podemos focar no que realmente é importante no início de todo projeto, principalmente para os nossos Clientes/Stakeholders, que é, a Regra de Negócio!
 
-Isto é muito aderente a realidade do nosso mercado, ainda mais quando amadurecemos como desenvolvedores/arquitetos de software, pois no final das contas, nosso foco deve ser o desenvolvimento de software que Entrega Valor (Regra de Negócio) para o nosso Cliente/Stakeholder.
+Isto é muito aderente a realidade do nosso mercado, ainda mais quando amadurecemos como desenvolvedores/arquitetos de software, pois no final das contas, nosso foco deve ser o desenvolvimento de software que Entrega Valor para os nossos Clientes/Stakeholders e não para nós mesmos, não é verdade?
 
 Com certeza desta forma é muito mais fácil entregarmos valor, pois podemos trabalhar mais focados em entregas evolutivas das nossas POCs/MVPs, deixando decisões mais técnicas para o futuro, de acordo com a viabilidade do projeto.
 
