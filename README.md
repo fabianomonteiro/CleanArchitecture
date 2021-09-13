@@ -26,7 +26,7 @@ Desta forma é muito mais fácil entregarmos valor, pois podemos trabalhar mais 
 
 ![alt text](https://blog.jovensprotagonistas.com/wp-content/uploads/2021/04/mvp-minimo-produto-viavel.jpg)
 
-Além disso, no livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de plugins, criando uma aplicação inteira sem SGBD, persistindo as informações diretamente em disco focando em ter mais velocidade de desenvolvimento, e no final do projeto ele viu que a abordagem de não utilizar um SGBD seria até melhor para o contexto do seu projeto, e decidiu lança-lo desta forma.
+Além disso, no livro Robert Martin descreve alguns exemplos onde ele utilizou a abordagem de plugins, criando uma aplicação inteira sem SGBD, persistindo as informações diretamente em disco focando na regra de negócio e em ter mais velocidade de desenvolvimento, no final do projeto ele viu que a abordagem de não utilizar um SGBD seria melhor para o contexto do seu projeto, e decidiu lança-lo desta forma.
 
 Adiar este tipo de decisão faz muito sentido, muitas vezes perdermos muito tempo decidindo quais tecnologias vamos utilizar, quais ferramentas, frameworks, banco de dados e etc, e na maioria das vezes decidimos isso de forma totalmente precoce. Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos que este tipo de decisão acabou não sendo a melhor, e tivemos que reavaliar outras opções que se enquadrassem melhor depois do sistema já mais maduro?
 
