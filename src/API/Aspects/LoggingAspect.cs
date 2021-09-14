@@ -4,21 +4,26 @@ using UseCases;
 
 namespace API.Aspects
 {
-    public class LoggingAspect : LoggingAspectBase
+    public class LoggingAspect : ILoggingAspect
     {
-        public override void LogStartExecute(IInteractor interactor)
+        public bool IsMatch<TInput>(IInteractor interactor, TInput input)
         {
-
+            return true;
         }
 
-        public override void LogEndExecute(IInteractor interactor, TimeSpan timeSpanExecution, bool executeFromAspect, IAspect aspectExecutedInstance)
+        public void LogStartExecute(IInteractor interactor)
         {
-            
+            // Lógica de log
         }
 
-        public override void LogExceptionExecute(IInteractor interactor, Exception exception)
+        public void LogEndExecute(IInteractor interactor, TimeSpan timeSpanExecution, bool executeFromAspect, IAspect aspectExecutedInstance)
         {
-            
+            // Lógica de log
+        }
+
+        public void LogExceptionExecute(IInteractor interactor, Exception exception)
+        {
+            // Lógica de log
         }
     }
 }

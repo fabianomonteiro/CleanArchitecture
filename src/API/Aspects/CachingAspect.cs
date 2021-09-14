@@ -14,6 +14,8 @@ namespace API.Aspects
 
         public override Task<TOutput> GetCache<TOutput>(IInteractor interactor)
         {
+            // Lógica de Cache
+
             return Task.FromResult(Activator.CreateInstance<TOutput>());
         }
     }

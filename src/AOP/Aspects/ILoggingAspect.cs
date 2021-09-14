@@ -3,7 +3,7 @@ using UseCases;
 
 namespace AOP
 {
-    public abstract class LoggingAspectBase : IAspect
+    public interface ILoggingAspect : IAspect
     {
         public abstract void LogStartExecute(IInteractor interactor);
 

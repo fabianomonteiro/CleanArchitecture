@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UseCases.Base
 {
-    public class BusinessRule
+    public abstract class BusinessRule
     {
     }
 }

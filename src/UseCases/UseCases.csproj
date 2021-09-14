@@ -5,20 +5,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AOP\AOP.csproj" />
-    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <Compile Remove="Aggregates\Account\Carrier\**" />
+    <Compile Remove="Aggregates\Account\Contact\**" />
+    <Compile Remove="Aggregates\Card\**" />
+    <Compile Remove="BusinessRules\**" />
+    <Compile Remove="Commands\**" />
+    <Compile Remove="Queries\**" />
+    <Compile Remove="UseCases\**" />
+    <EmbeddedResource Remove="Aggregates\Account\Carrier\**" />
+    <EmbeddedResource Remove="Aggregates\Account\Contact\**" />
+    <EmbeddedResource Remove="Aggregates\Card\**" />
+    <EmbeddedResource Remove="BusinessRules\**" />
+    <EmbeddedResource Remove="Commands\**" />
+    <EmbeddedResource Remove="Queries\**" />
+    <EmbeddedResource Remove="UseCases\**" />
+    <None Remove="Aggregates\Account\Carrier\**" />
+    <None Remove="Aggregates\Account\Contact\**" />
+    <None Remove="Aggregates\Card\**" />
+    <None Remove="BusinessRules\**" />
+    <None Remove="Commands\**" />
+    <None Remove="Queries\**" />
+    <None Remove="UseCases\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Aggregates\Account\Contact\" />
-    <Folder Include="Aggregates\Account\Carrier\" />
-    <Folder Include="Aggregates\Card\" />
-    <Folder Include="Commands\" />
-    <Folder Include="BusinessRules\" />
-    <Folder Include="Inputs\Account\" />
-    <Folder Include="Outputs\Account\" />
-    <Folder Include="Queries\" />
-    <Folder Include="UseCases\Account\" />
+    <ProjectReference Include="..\AOP\AOP.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 
 </Project>

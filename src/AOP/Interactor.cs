@@ -1,5 +1,6 @@
 ﻿using AOP;
 using AOP.Aspects;
+using AOP.Exceptions;
 using System;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
@@ -21,6 +22,9 @@ namespace UseCases
             [CallerLineNumber] int sourceLineNumber = 0)
             where TCallerInstance : class, ICallerInstance
         {
+            if (Authorize())
+                throw new NotAuthorizedException();
+
             try
             {
                 AspectWeaver.Instance.LoggingAspect?.LogStartExecute(this);
@@ -29,7 +33,7 @@ namespace UseCases
 
                 stopwatch.Start();
 
-                ChangingExecuteAspectBase changingExecuteAspect;
+                IChangingExecuteAspect changingExecuteAspect;
 
                 _output = InternalImplementExecute(out changingExecuteAspect);
 
@@ -47,7 +51,20 @@ namespace UseCases
             return this;
         }
 
-        private Task<TOutput> InternalImplementExecute(out ChangingExecuteAspectBase changeExecuteAspect)
+        private bool Authorize()
+        {
+            if (AspectWeaver.Instance.IsAuthorizingAspect)
+            {
+                var securityAspect = AspectWeaver.Instance.GetAuthorizingAspect(this, _input);
+
+                if (securityAspect != null)
+                    return securityAspect.Authorize();
+            }
+
+            return true;
+        }
+
+        private Task<TOutput> InternalImplementExecute(out IChangingExecuteAspect changeExecuteAspect)
         {
             if (AspectWeaver.Instance.IsChangingExecuteAspect)
             {

@@ -14,13 +14,13 @@ namespace AOP
         private List<IAspect> _aspects = new List<IAspect>();
         public IReadOnlyList<IAspect> Aspects => _aspects;
 
-        private MappingAspectBase _mappingAspect;
-        public MappingAspectBase MappingAspect
+        private IMappingAspect _mappingAspect;
+        public IMappingAspect MappingAspect
         {
             get
             {
                 if (_mappingAspect == null)
-                    _mappingAspect = Aspects.FirstOrDefault(x => x is MappingAspectBase) as MappingAspectBase;
+                    _mappingAspect = Aspects.FirstOrDefault(x => x is IMappingAspect) as IMappingAspect;
 
                 if (_mappingAspect == null)
                     throw new NotImplementedMappingAspectException();
@@ -29,41 +29,15 @@ namespace AOP
             }
         }
 
-
-
-        private LoggingAspectBase _loggingAspect;
-        public LoggingAspectBase LoggingAspect
+        private ILoggingAspect _loggingAspect;
+        public ILoggingAspect LoggingAspect
         {
             get
             {
                 if (_loggingAspect == null)
-                    _loggingAspect = Aspects.FirstOrDefault(x => x is LoggingAspectBase) as LoggingAspectBase;
+                    _loggingAspect = Aspects.FirstOrDefault(x => x is ILoggingAspect) as ILoggingAspect;
 
                 return _loggingAspect;
-            }
-        }
-
-        private IEnumerable<CachingAspectBase> _cachingAspect;
-        public IEnumerable<CachingAspectBase> CachingAspect
-        {
-            get
-            {
-                if (_cachingAspect == null)
-                    _cachingAspect = Aspects.Where(x => x is CachingAspectBase).OfType<CachingAspectBase>();
-
-                return _cachingAspect;
-            }
-        }
-
-        private bool? _isCachingAspect;
-        public bool IsCachingAspect
-        {
-            get
-            {
-                if (!_isCachingAspect.HasValue)
-                    _isCachingAspect = CachingAspect != null;
-
-                return _isCachingAspect.Value;
             }
         }
 
@@ -73,21 +47,45 @@ namespace AOP
             get
             {
                 if (!_isChangingExecuteAspect.HasValue)
-                    _isChangingExecuteAspect = CachingAspect != null;
+                    _isChangingExecuteAspect = ChangingExecuteAspects.Count() > 0;
 
                 return _isChangingExecuteAspect.Value;
             }
         }
 
-        private IEnumerable<ChangingExecuteAspectBase> _changingExecuteAspects;
-        public IEnumerable<ChangingExecuteAspectBase> ChangingExecuteAspects
+        private IEnumerable<IChangingExecuteAspect> _changingExecuteAspects;
+        public IEnumerable<IChangingExecuteAspect> ChangingExecuteAspects
         {
             get
             {
                 if (_changingExecuteAspects == null)
-                    _changingExecuteAspects = Aspects.Where(x => x is ChangingExecuteAspectBase).OfType<ChangingExecuteAspectBase>();
+                    _changingExecuteAspects = Aspects.Where(x => x is IChangingExecuteAspect).OfType<IChangingExecuteAspect>();
 
                 return _changingExecuteAspects;
+            }
+        }
+
+        private bool? _isAuthorizingAspect;
+        public bool IsAuthorizingAspect
+        {
+            get
+            {
+                if (!_isAuthorizingAspect.HasValue)
+                    _isAuthorizingAspect = AuthorizingAspects.Count() > 0;
+
+                return _isAuthorizingAspect.Value;
+            }
+        }
+
+        private IEnumerable<IAuthorizingAspect> _authorizingAspects;
+        public IEnumerable<IAuthorizingAspect> AuthorizingAspects
+        {
+            get
+            {
+                if (_authorizingAspects == null)
+                    _authorizingAspects = Aspects.Where(x => x is IAuthorizingAspect).OfType<IAuthorizingAspect>();
+
+                return _authorizingAspects;
             }
         }
 
@@ -104,12 +102,23 @@ namespace AOP
             _aspects.Add(Activator.CreateInstance<T>());
         }
 
-        public ChangingExecuteAspectBase GetChangingExecuteAspect<TInput, TOutput>(Interactor<TInput, TOutput> interactor, TInput input)
+        public IChangingExecuteAspect GetChangingExecuteAspect<TInput, TOutput>(Interactor<TInput, TOutput> interactor, TInput input)
         {
-            foreach (var item in ChangingExecuteAspects)
+            foreach (var changingExecuteAspect in ChangingExecuteAspects)
             {
-                if (item.IsMatch(interactor, input))
-                    return item;
+                if (changingExecuteAspect.IsMatch(interactor, input))
+                    return changingExecuteAspect;
+            }
+
+            return null;
+        }
+
+        public IAuthorizingAspect GetAuthorizingAspect<TInput, TOutput>(Interactor<TInput, TOutput> interactor, TInput input)
+        {
+            foreach (var authorizingAspect in AuthorizingAspects)
+            {
+                if (authorizingAspect.IsMatch(interactor, input))
+                    return authorizingAspect;
             }
 
             return null;

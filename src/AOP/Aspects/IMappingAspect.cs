@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AOP
 {
-    public abstract class MappingAspectBase : IAspect
+    public interface IMappingAspect : IAspect
     {
         public abstract Task<TDestination> Map<TSource, TDestination>(TSource source);
     }
