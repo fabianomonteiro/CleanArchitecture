@@ -18,7 +18,7 @@ Extendendo a utilização das técnicas de AOP, criei um mecanismo de inversão 
 
 Assim sendo, podemos focar no que realmente é importante no início do projeto, principalmente para os nossos Clientes/Stakeholders, que é nada mais nada menos, que a nossa querida Regra de Negócio!
 
-![alt text](https://lh3.googleusercontent.com/proxy/4A7Ov_CuEfy4dMdc03h4dM--nTlXnUhLHBMYhdfR4myqL8VGVQ3bORVj8a6mEaCWiP3c6I8hXK6D2nCfok3ezUAJkIowe6_jP74KVPR-apdRVp949N5g9CI)
+![alt text](https://global-uploads.webflow.com/6046bc2da84ac5553b1fa71a/6061de485239533e653d461d_Blog-Clapping-hands.jpeg)
 
 Isto é muito aderente a realidade do nosso mercado, ainda mais quando amadurecemos como desenvolvedores/arquitetos de software, pois no final das contas, nosso foco deve ser o desenvolvimento de softwares que Entreguem cada vez mais Valor para os nossos Clientes/Stakeholders e não para nós mesmos, não é verdade?
 
