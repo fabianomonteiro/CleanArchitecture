@@ -34,7 +34,7 @@ Quantas vezes somente quando avançamos no desenvolvimento do projeto percebemos
 
 Esta forma de pensar e desenvolver software pode nos poupar um grande esforço inicial tentando ser precisos na escolha, em meio as tantas opções que temos disponíveis:
 
-![alt text](https://www.davrous.com/wp-content/uploads/2018/12/screen001_thumb.jpg)
+![alt text](https://pbs.twimg.com/media/CHEa_7SXAAAAX1U.png)
 
 Como vimos, a abordagem de AOP nos ajuda bastante a adiar algumas decisões até o momento que tenhamos mais segurança para toma-las, e também nos ajuda no desacoplamento dos nossos sitemas, tornando-os mais plugáveis.
 
